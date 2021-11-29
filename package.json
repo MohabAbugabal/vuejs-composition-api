@@ -5,10 +5,13 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
+    "test": "jest",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@types/moment": "2.13",
+    "axios": "^0.24.0",
+    "moment": "2.13",
     "vue": "^3.0.0"
   },
   "devDependencies": {
