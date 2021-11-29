@@ -1,4 +1,4 @@
-import {nextTick} from 'vue'
+//import {nextTick} from 'vue'
 import {mount, flushPromises} from '@vue/test-utils'
 import  Timeline from '../../src/components/Timeline.vue'
 import {today, thisWeek, thisMonth} from "../../src/mocks"

@@ -3,7 +3,7 @@
     <span class="panel-tabs">
       <a
         v-for="period in periods"
-        :key="period.id"
+        :key="period"
         :class="{ 'is-active': period === currentPeriod }"
         :data-test="period"
         @click="setPeriod(period)"
@@ -42,7 +42,7 @@ export default defineComponent({
   async setup() {
     
 
-    const periods = ["Today", "This Week", "This Month"];
+    const periods: Period[] = ["Today", "This Week", "This Month"];
     const currentPeriod = ref<Period>("Today");
     const store = useStore();
 
